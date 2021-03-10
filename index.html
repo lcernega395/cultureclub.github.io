@@ -1,0 +1,79 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>main page</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/estilomain.css"/>
+<script languague="javascript">
+        function mostrar(sectionMostrar,sectionCerrar) {
+            section1 = document.getElementById(sectionMostrar);
+            section2 = document.getElementById(sectionCerrar);
+            section1.style.display = '';
+            section2.style.display = 'none';
+        }
+</script>
+</head>
+<body>
+<div class="pull-right align-top navbar-tag">
+	<nav class="navbar navbar-light">
+		<a class="navbar-brand" href="#">
+			<img src="logo2png.png" width="220" height="200" class="d-inline-block align-top" alt="logo" loading="lazy">
+		</a>
+	<div class="cabecera">
+	Music, Humour, News and Podcasts<br>
+	Your Culture Club
+	</div>
+	</nav>
+</div>
+<main class="row">
+	<section class="col">
+		<section class="card">
+			<img src="music.png" alt="music" width="34" height="35" class="center">
+			<a class="nav-link" href="music.html">Music</a>
+				<h1>Let's listen to some music!</h1>
+		</section>
+		<section class="card">
+			<img src="humour.png" alt="humour" width="35" height="35" class="center">
+			<a class="nav-link" href="humour.html">Humour</a>
+				<h1>What's your sense of humour?</h1>
+		</section>
+	</section>
+	<section class="col">
+		<section class="card">
+			<img src="news2.png" alt="news" width="35" height="35" class="center">
+			<a class="nav-link" href="javascript:mostrar('caja1', 'caja2')">News</a>
+				<h1>Daily Newspaper</h1>
+		</section>
+		<section class="card">
+			<img src="podcast2.png" alt="podcast" width="35" height="35" class="center">
+			<a class="nav-link" href="javascript:mostrar('caja2', 'caja1')">Podcasts</a>
+				<h1>Do you enjoy listening to podcasts?</h1>
+		</section>
+	</section>
+</main>
+<br><br><br><br>
+<section id="caja1" style="display:none" class="desplegableNews">
+	<ul>
+		<li><a href="https://www.bbc.com/news/topics/cpml2v678pxt" style= "color: rgb(0, 0, 153)" target="_blank">BBC</a></li>
+		<li><a href="https://www.theguardian.com/uk?INTCMP=CE_UK" style= "color: rgb(0, 0, 153)" target="_blank">The Guardian</a></li>
+		<li><a href="https://www.thetimes.co.uk/" style= "color: rgb(0, 0, 153)" target="_blank">The Times</a></li>
+		<li><a href="https://metro.co.uk/news/" style= "color: rgb(0, 0, 153)" target="_blank">METRO</a></li>
+		<li><a href="https://www.express.co.uk/news" style= "color: rgb(0, 0, 153)" target="_blank">EXPRESS</a></li>
+	</ul>
+</section>
+<section id="caja2" style="display:none" class="desplegablePodcasts">
+	<ul>
+		<li><a href="https://www.bbc.co.uk/podcasts?q=english" style= "color: rgb(0, 0, 153)" target="_blank">BBC</a></li>
+		<li><a href="https://tunein.com/podcasts/" style= "color: rgb(0, 0, 153)" target="_blank">TUNE IN</a></li>
+		<li><a href="https://www.iheart.com/podcast/" style= "color: rgb(0, 0, 153)" target="_blank">iHEART</a></li>
+		<li><a href="https://www.npr.org/podcasts/?t=1614880062259" style= "color: rgb(0, 0, 153)" target="_blank">NPR</a></li>
+		<li><a href="https://toppodcast.com/top-podcasts/" style= "color: rgb(0, 0, 153)" target="_blank">TOP PODCASTS</a>
+	</ul>
+</section>
+<br>
+<footer>
+	<div class="copyright">Culture Club &copy; Lía Cernega Cernega, 2021 </div>
+</footer>
+</body>
+</html>

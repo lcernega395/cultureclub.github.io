@@ -1,0 +1,23 @@
+body{
+	background-color: #eaf5f8;
+}
+
+.navbar-brand{
+	font-size: 200%;
+	margin-right: 0px;
+}
+
+.menu{
+	font-size: 120%;
+	text-transform: uppercase;
+	font-family: Rubik,HelveticaNeueBold,HelveticaNeue-Bold,"Helvetica Neue Bold",HelveticaBold,Helvetica-Bold,"Helvetica Bold",HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.card1{
+	text-align: right;
+	margin-top: 40px;
+}
+
+.col{
+	padding-right: 0px;
+}
