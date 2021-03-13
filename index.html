@@ -6,15 +6,18 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/estilomain.css"/>
 <script languague="javascript">
-        function mostrar(sectionMostrar,sectionCerrar) {
-            section1 = document.getElementById(sectionMostrar);
-            section2 = document.getElementById(sectionCerrar);
-            section1.style.display = '';
-            section2.style.display = 'none';
-        }
+		function mostrar(sectionMostrar,sectionCerrar,sectionCerrar2) {
+			section1 = document.getElementById(sectionMostrar);
+			section2 = document.getElementById(sectionCerrar);
+			section3 = document.getElementById(sectionCerrar2);
+			section1.style.display = '';
+			section2.style.display = 'none';
+			section3.style.display= 'none';
+		}
 </script>
 </head>
-<body>
+<body> 
+<h2 class="desc"> Welcome to my website. Here you'll find a range of resources in English to practice and have a good time</h2>
 <div class="pull-right align-top navbar-tag">
 	<nav class="navbar navbar-light">
 		<a class="navbar-brand" href="#">
@@ -42,12 +45,12 @@
 	<section class="col">
 		<section class="card">
 			<img src="news2.png" alt="news" width="35" height="35" class="center">
-			<a class="nav-link" href="javascript:mostrar('caja1', 'caja2')">News</a>
+			<a class="nav-link" href="javascript:mostrar('caja1', 'caja2', 'caja3')">News</a>
 				<h1>Daily Newspaper</h1>
 		</section>
 		<section class="card">
 			<img src="podcast2.png" alt="podcast" width="35" height="35" class="center">
-			<a class="nav-link" href="javascript:mostrar('caja2', 'caja1')">Podcasts</a>
+			<a class="nav-link" href="javascript:mostrar('caja2', 'caja1', 'caja3')">Podcasts</a>
 				<h1>Do you enjoy listening to podcasts?</h1>
 		</section>
 	</section>
@@ -71,9 +74,19 @@
 		<li><a href="https://toppodcast.com/top-podcasts/" style= "color: rgb(0, 0, 153)" target="_blank">TOP PODCASTS</a>
 	</ul>
 </section>
+<section id="caja3" style="display:none" class="desplegableAboutMe">
+	<section class ="row">
+		<section class="col1">
+			<img class='fotolia' src="fotoLia.png" alt="fotoLia" width="130" height="130" class="center">
+		</section>
+		<section class="col2">
+			<p> Lía Cernega Cernega holds a degree in Linguistics and Applied Languages by the Complutense University of Madrid. Currently, she's studying a Master's Degree in Secondary Education.</p>
+		</section>
+	</section>
+</section>
 <br>
 <footer>
-	<div class="copyright">Culture Club &copy; Lía Cernega Cernega, 2021 </div>
+	<section id='caja3' class="copyright">Culture Club &copy; <a href="javascript:mostrar('caja3', 'caja1', 'caja2')">about me</a></section>
 </footer>
 </body>
 </html>
