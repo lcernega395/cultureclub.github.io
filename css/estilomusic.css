@@ -17,12 +17,35 @@ body{
 	text-align: right;
 	margin-top: 40px;
 	margin-left: 10%;
+	width: 20%;
+	float: right;
 }
 
-.card2{
+.card2 {
 	margin-right: 10%;
+	width: 20%
 }
 
-.col{
+.col {
 	padding-right: 0px;
 }
+
+
+.card3 {
+	width: 19%;
+	height: 5%;
+	float: right;
+	background-color: #eaf5f8;
+	display: flex;
+	margin-right: 15%;
+	margin-bottom: 3%;
+	flex-direction: column;
+	word-wrap: break-word;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+.row {
+	width: 100%;
