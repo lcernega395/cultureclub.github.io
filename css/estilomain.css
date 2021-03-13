@@ -16,6 +16,21 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	font-size: 100%;
+	text-align: center;
+	margin-top: 2%;
+}
+
+h4 {
+	font-size: 80%;
+	text-align: center;
+}
+
+.fotoLia{
+	margin-top: 15%;
+} 
+
 .card {
 	background-color: #f1f1f1;
 	margin-left: 50px;
@@ -58,6 +73,27 @@ h1 {
 	border: .25rem solid rgba(0,0,0,.125);
 	border-radius: 1%;
 	font-size: 17px;
+}
+
+.desplegableAboutMe {
+	width: 30%;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+	word-wrap: break-word;
+	background-clip: border-box;
+	font-size: 17px;
+	text-align: justify;
+}
+
+.col1{
+	text-align: center;
+	margin-right: 5%;
+}
+
+.col2 {
+	width: 55%;
 }
 
 ul {
